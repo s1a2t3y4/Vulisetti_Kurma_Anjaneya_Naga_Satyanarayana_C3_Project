@@ -70,4 +70,11 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    @Test
+    public void total_price_for_selected_items_should_return_sum_of_item_price(){
+        List<String> selectedItems = new ArrayList<>();
+        selectedItems.add("Sweet corn soup");
+        selectedItems.add("Vegetable lasagne");
+        assertEquals(388,restaurant.getPriceForSelectedItems(selectedItems));
+    }
 }

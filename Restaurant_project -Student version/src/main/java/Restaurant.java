@@ -64,4 +64,7 @@ public class Restaurant {
     }
 
 
+    public int getPriceForSelectedItems(List<String> selectedItems) {
+        return 0;
+    }
 }
